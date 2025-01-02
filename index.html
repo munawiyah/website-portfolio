@@ -30,30 +30,31 @@ Copyright: 2024 ©Wiwyy
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
   <link rel="stylesheet" href="css/style-switcher.css" />
   <style>
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .home-info, .home-img {
-      flex: 1 1 100%;
-      text-align: center;
-    }
-
+    /* Default styling untuk gambar agar responsif */
     .home-img img {
-      max-width: 80%;
-      height: auto;
+      width: 100%;
+      max-width: 500px; /* Batas maksimum untuk gambar */
+      height: auto; /* Menjaga aspek rasio */
+      display: block;
+      margin: 0 auto; /* Agar gambar tetap terpusat */
     }
-  }
-
-  @media (max-width: 480px) {
-    .home-info h3 {
-      font-size: 0.9rem;
+  
+    /* Media query untuk perangkat dengan lebar layar maksimal 768px */
+    @media (max-width: 768px) {
+      .home-img img {
+        max-width: 80%; /* Ukuran gambar lebih kecil pada tablet */
+      }
     }
-
-    .btn {
-      font-size: 0.8rem;
+  
+    /* Media query untuk perangkat dengan lebar layar maksimal 480px */
+    @media (max-width: 480px) {
+      .home-img img {
+        max-width: 70%; /* Ukuran gambar lebih kecil pada handphone */
+      }
     }
-  }
-</style>
-
+  </style>
+  
+  
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/fabicon.png" />
 </head>
@@ -113,150 +114,178 @@ Copyright: 2024 ©Wiwyy
       <!-- Home Section End -->
 
       <!-- About Section Start -->
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
+<section class="about section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>About Me</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="about-content padd-15">
+        <div class="row">
+          <!-- Kolom Gambar -->
+          <div class="about-image padd-15">
+            <img src="images/profil.jpeg" alt="My Photo" class="responsive-image">
+          </div>
+          <!-- Kolom Teks -->
+          <div class="about-text padd-15">
+            <h3>I'm Munawiyah</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="personal-info padd-15">
+            <div class="row">
+              <div class="info-item padd-15">
+                <p>Birthday : <span>04 April 2005</span></p>
+              </div>
+              <div class="info-item padd-15">
+                <p>Age : <span>19</span></p>
+              </div>
+              <div class="info-item padd-15">
+                <p>Website : <span>www.domain.com</span></p>
+              </div>
+              <div class="info-item padd-14">
+                <p>Email : <span>munawiyah346@gmail.com</span></p>
+              </div>
+              <div class="info-item padd-15">
+                <p>Degree : <span>CS</span></p>
+              </div>
+              <div class="info-item padd-15">
+                <p>Phone : <span>+62 83833427003</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="buttons padd-15">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#contact" class="btn hire-me">Hire Me</a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  <h3>I'm Munawiyah</h3>
+          <div class="skills padd-15">
+            <div class="row">
+              <div class="skills-item padd-15">
+                <h5>HTML</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 95%"></div>
+                  <div class="skill-percent">80%</div>
                 </div>
               </div>
-              <div class="row">
-                <div class="personal-info padd-15">
-                  <div class="row">
-                    <div class="info-item padd-15">
-                      <p>Birthday : <span>04 April 2005</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Age : <span>19</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Website : <span>www.domain.com</span></p>
-                    </div>
-                    <div class="info-item padd-14">
-                      <p>Email : <span>munawiyah346@gmail.com</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Degree : <span>CS</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Phone : <span>+62 83833427003</span></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="#" class="btn">Download CV</a>
-                      <a href="#contact" class="btn hire-me">Hire Me</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills padd-15">
-                  <div class="row">
-                    <div class="skills-item padd-15">
-                      <h5>HTML</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 95%"></div>
-                        <div class="skill-percent">95%</div>
-                      </div>
-                    </div>
-                    <div class="skills-item padd-15">
-                      <h5>CSS</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 75%"></div>
-                        <div class="skill-percent">75%</div>
-                      </div>
-                    </div>
-                    <div class="skills-item padd-15">
-                      <h5>JS</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 65%"></div>
-                        <div class="skill-percent">65%</div>
-                      </div>
-                    </div>
-                    <div class="skills-item padd-15">
-                      <h5>PHP</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 80%"></div>
-                        <div class="skill-percent">80%</div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="skills-item padd-15">
+                <h5>CSS</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 75%"></div>
+                  <div class="skill-percent">75%</div>
                 </div>
               </div>
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">My Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- Timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2010 - 2016
-                          </h3>
-                          <h4 class="timeline-title">
-                            MI MATHLA'UL HUDA
-                          </h4>
-                          <p class="timeline-text">
-                            JL Koja, Km. 1, Kp. Koja, Kosambi Dalam, Mekarbaru, Cijeruk, Kec. Mekar Baru, Kabupaten Tangerang, Banten 15550
-                          </p>
-                        </div>
-                        <!-- Timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2016 - 2019
-                          </h3>
-                          <h4 class="timeline-title">
-                            SMP TUNAS HARAPAN
-                          </h4>
-                          <p class="timeline-text">
-                            JL Koja, Km. 1, Kp. Koja, Kosambi Dalam, Mekarbaru, Cijeruk, Kec. Mekar Baru, Kabupaten Tangerang, Banten 15550
-                          </p>
-                        </div>
-                        <!-- Timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2019 - 2022
-                          </h3>
-                          <h4 class="timeline-title">
-                            SMK MATHLA'UL HUDA
-                          </h4>
-                          <p class="timeline-text">
-                            W98M+3X6, Sidoko, Kec. Gn. Kaler, Kabupaten Tangerang, Banten 15620
-                          </p>
-                        </div>
-                        <!-- Timeline item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2023 - sekarang
-                          </h3>
-                          <h4 class="timeline-title">
-                            UNIVERSITAS YATSI MADANI
-                          </h4>
-                          <p class="timeline-text">
-                            Jl. Pendidikan No.1, Pasilian, Kec. Kronjo, Kabupaten Tangerang, Banten 15550
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+              <div class="skills-item padd-15">
+                <h5>JS</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 65%"></div>
+                  <div class="skill-percent">65%</div>
+                </div>
+              </div>
+              <div class="skills-item padd-15">
+                <h5>PHP</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 80%"></div>
+                  <div class="skill-percent">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="education padd-15">
+            <h3 class="title">My Education</h3>
+            <div class="row">
+              <div class="timeline-box padd-15">
+                <div class="timeline shadow-dark">
+                  <!-- Timeline item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2010 - 2016
+                    </h3>
+                    <h4 class="timeline-title">
+                      MI MATHLA'UL HUDA
+                    </h4>
+                    <p class="timeline-text">
+                      JL Koja, Km. 1, Kp. Koja, Kosambi Dalam, Mekarbaru, Cijeruk, Kec. Mekar Baru, Kabupaten Tangerang, Banten 15550
+                    </p>
+                  </div>
+                  <!-- Timeline item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2016 - 2019
+                    </h3>
+                    <h4 class="timeline-title">
+                      SMP TUNAS HARAPAN
+                    </h4>
+                    <p class="timeline-text">
+                      JL Koja, Km. 1, Kp. Koja, Kosambi Dalam, Mekarbaru, Cijeruk, Kec. Mekar Baru, Kabupaten Tangerang, Banten 15550
+                    </p>
+                  </div>
+                  <!-- Timeline item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2019 - 2022
+                    </h3>
+                    <h4 class="timeline-title">
+                      SMK MATHLA'UL HUDA
+                    </h4>
+                    <p class="timeline-text">
+                      W98M+3X6, Sidoko, Kec. Gn. Kaler, Kabupaten Tangerang, Banten 15620
+                    </p>
+                  </div>
+                  <!-- Timeline item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i> 2023 - sekarang
+                    </h3>
+                    <h4 class="timeline-title">
+                      UNIVERSITAS YATSI MADANI
+                    </h4>
+                    <p class="timeline-text">
+                      Jl. Pendidikan No.1, Pasilian, Kec. Kronjo, Kabupaten Tangerang, Banten 15550
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- About Section End -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+
+<style>
+.about-image img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 10px;
+}
+.about-image {
+  flex: 1;
+}
+.about-text {
+  flex: 2;
+}
+@media (max-width: 768px) {
+  .about-content .row {
+    flex-direction: column;
+  }
+  .about-image {
+    margin-bottom: 70px;
+  }
+}
+</style>
+
 
       <!-- Services Section Start -->
       <section class="service section" id="service">
