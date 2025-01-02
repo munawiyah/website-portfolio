@@ -28,8 +28,32 @@ Copyright: 2024 ©Wiwyy
   <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
   <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
-
   <link rel="stylesheet" href="css/style-switcher.css" />
+  <style>
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .home-info, .home-img {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    .home-img img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .home-info h3 {
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/fabicon.png" />
 </head>
