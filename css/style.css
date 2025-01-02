@@ -956,6 +956,28 @@ h3.my-profession {
   height: auto;
   display: block;
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-info, .home-img {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .home-img img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
 
 
 /* Device Responsive End */
