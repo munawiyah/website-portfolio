@@ -586,6 +586,7 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
+
 /* About End */
 
 /* Service Start */
@@ -978,6 +979,13 @@ h3.my-profession {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 768px) {
+  .home-img {
+    display: none;
+  }
+}
+
 
 
 /* Device Responsive End */
